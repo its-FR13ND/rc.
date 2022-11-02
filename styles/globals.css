@@ -2,6 +2,32 @@
 @tailwind components;
 @tailwind utilities;
 
+.elp {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.filter-option-section {
+    overflow: hidden;
+    height: 100%;
+    max-height: 3.5rem;
+    transition: all 0.5s ease-in-out;
+}
+
+.filter-option-section.SortList {
+    max-height: 9rem;
+}
+
+.filter-option-section.Category {
+    max-height: 26rem;
+}
+
+.filter-option-section.Brand {
+    max-height: 26.5rem;
+    transition: all 0.5s ease-in-out !important;
+}
+
 .footer-active-section-1 {
     height: 100%;
     max-height: 3rem;
@@ -13,4 +39,16 @@
 }
 .footer-active-section-1.license {
     max-height: 25rem;
+}
+
+*,
+*::after,
+*::before {
+    outline: none !important;
+    user-select: none;
+}
+
+::selection {
+    color: #fafaf9;
+    background: #44403c;
 }

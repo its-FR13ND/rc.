@@ -24,7 +24,11 @@ export default function Navigation() {
     if (screenWidth === "Desktop") {
         return (
             <>
-                <nav className="sticky top-0 z-[200] mx-auto hidden w-full max-w-5xl rounded-b-3xl border-b-4 border-orange-500 bg-white px-10 shadow-xl shadow-black/25 lg:block">
+                <nav
+                    className="
+                    sticky top-0 z-[200] mx-auto hidden w-full max-w-5xl rounded-b-3xl border-b-4 border-orange-500 
+                    bg-white/80 px-10 shadow-xl shadow-black/25 backdrop-blur-lg backdrop-saturate-[10] lg:block"
+                >
                     <ul className="flex w-full items-center justify-start gap-x-14">
                         <li className="border-l border-stone-400 py-1 pl-14 text-xl font-thin text-orange-500">
                             روغنی‌کار
@@ -81,6 +85,14 @@ export default function Navigation() {
                         </li>
                     </ul>
                 </nav>
+                <Link
+                    href="/قیمت-روز-روغن-موتور-فیلر-هوا-ضدیخ"
+                    className="
+                    fixed -bottom-6 right-1/2 z-[200] hidden translate-x-1/2 rounded-t-3xl border border-orange-500 bg-white/80 px-5 pt-5 pb-10 text-sm 
+                    font-extrabold text-orange-500 backdrop-blur-lg backdrop-saturate-[20] duration-150 hover:-bottom-1 lg:block"
+                >
+                    قیمت روز روغن خودرو و فیلتر خودرو و ضد یخ
+                </Link>
             </>
         );
     }

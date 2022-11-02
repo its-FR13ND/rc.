@@ -66,7 +66,7 @@ export default function Footer() {
                             </Link>
                         </header>
                         {/* اعتماد به روغنی کار */}
-                        <section className="row-span-2 mr-10 flex w-full max-w-xs flex-col items-start justify-start">
+                        <section className="row-span-2 mr-10 flex w-full max-w-[18.75rem] flex-col items-start justify-start">
                             <h6 className="text-xl font-black text-stone-500">
                                 اعتماد به روغنی‌کار:
                             </h6>
