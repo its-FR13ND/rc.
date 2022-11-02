@@ -48,7 +48,7 @@ export default function Navigation() {
                         </li>
                         <li>
                             <Link
-                                href="/product-list"
+                                href="/لیست-محصولات"
                                 className={`flex items-center justify-center gap-x-1 py-4 text-sm ${
                                     pathname === "/product-list"
                                         ? "font-thin text-orange-500"
@@ -116,7 +116,7 @@ export default function Navigation() {
                 </li>
                 <li>
                     <Link
-                        href="/product-list"
+                        href="/لیست-محصولات"
                         className={`flex flex-col items-center justify-center py-2 text-sm ${
                             pathname === "/product-list"
                                 ? "text-xs font-thin text-orange-500"
