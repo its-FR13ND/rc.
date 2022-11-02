@@ -360,7 +360,7 @@ export default ProductListPage;
 //! SSR
 import Axios from "axios";
 export const getServerSideProps = async (context) => {
-    const { data } = await Axios.get("http://localhost:3000/api/fake-products");
+    const { data } = await Axios.get("https://rc-eco.vercel.app/api/fake-products");
     return {
         props: {
             products: data,
