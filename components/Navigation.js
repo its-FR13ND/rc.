@@ -74,7 +74,7 @@ export default function Navigation() {
                         </li>
                         <li className="flex grow items-center justify-end">
                             <Link
-                                href="/login"
+                                href="/ورود-به-اکانت"
                                 className="
                                 relative bottom-[0.1rem] flex items-center justify-center gap-x-1 rounded-full bg-gradient-to-l from-orange-900
                                 to-orange-500 px-4 py-2 font-extrabold text-white shadow-orange duration-200 hover:bottom-0 hover:shadow-none"
@@ -146,7 +146,7 @@ export default function Navigation() {
                 </li>
                 <li>
                     <Link
-                        href="/"
+                        href="/ورود-به-اکانت"
                         className="flex flex-col items-center justify-center py-2 text-sm font-extrabold text-stone-500"
                     >
                         ورود

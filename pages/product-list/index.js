@@ -316,7 +316,7 @@ const ProductListPage = ({ products }) => {
                         return (
                             <article
                                 key={i.id}
-                                className="h-full w-full rounded-2xl border border-stone-300 bg-white p-2 duration-200 lg:hover:scale-105"
+                                className="h-full w-full rounded-2xl border border-stone-300 bg-white p-2 duration-200 lg:hover:scale-105 lg:hover:shadow-lg"
                             >
                                 <Link
                                     href={`/لیست-محصولات/${i.id}`}

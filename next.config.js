@@ -12,6 +12,10 @@ const nextConfig = {
                 source: `/${encodeURI("لیست-محصولات")}`,
                 destination: "/product-list",
             },
+            {
+                source: `/${encodeURI("ورود-به-اکانت")}`,
+                destination: "/login-page",
+            },
         ];
     },
     images: {
