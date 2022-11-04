@@ -13,10 +13,12 @@ module.exports = {
             },
             boxShadow: {
                 orange: "0px 7px 15px rgba(255, 72, 0, 0.6)",
+                nice: "0px 7px 20px rgba(0, 0, 0, 0.3), 0px 5px 8px rgba(0, 0, 0, 0.2)",
             },
-            backgroundImage:{
-                "half-orange": "linear-gradient(0deg, rgba(249,115,22,0.3) 0%, rgba(249,115,22,0.3) 50%, rgba(249,115,22,0) 50%, rgba(249,115,22,0) 100%)"
-            }
+            backgroundImage: {
+                "half-orange":
+                    "linear-gradient(0deg, rgba(249,115,22,0.3) 0%, rgba(249,115,22,0.3) 50%, rgba(249,115,22,0) 50%, rgba(249,115,22,0) 100%)",
+            },
         },
     },
     plugins: [],
