@@ -6,6 +6,7 @@ import { useState } from "react";
 
 //! Comps
 import Footer from "../../components/Footer";
+import Loading from "../../components/Loading";
 
 //! Icons
 import { BsPhoneVibrateFill } from "react-icons/bs";
@@ -35,6 +36,7 @@ export default function LoginPage() {
                     content="روغنی کار | با این صفحه میتونین به اطلاعاتی که قبلا در اکانت ثبت کرده اید و یا سفارش های خود دسترسی داشته باشید"
                 />
             </Head>
+            <Loading />
             <main className="flex min-h-screen w-full items-center justify-center bg-gradient-to-tl from-orange-900 to-orange-500 px-4 md:px-0">
                 <section className="w-full max-w-lg overflow-hidden rounded-3xl border-2 border-orange-400 bg-white shadow-nice">
                     <header className="grid w-full grid-cols-2 items-center justify-items-center bg-white py-4 shadow-nice">
