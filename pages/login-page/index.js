@@ -2,7 +2,7 @@
 import Head from "next/head";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import { object, string } from "yup";
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 
 //! Comps
 import Footer from "../../components/Footer";
@@ -27,6 +27,9 @@ const VALIDATE_CODE = object().shape({
 
 //! Template
 export default function LoginPage() {
+    useEffect(() => {
+        document.getElementById("phone_number").focus();
+    }, []);
     const [active, setActive] = useState("phone");
     const SUBMIT_PHONE = (values) => {
         console.log(values);
@@ -86,6 +89,7 @@ export default function LoginPage() {
                                         </label>
                                         <section className="mt-10 flex w-full items-center justify-between rounded-full bg-stone-100 px-3">
                                             <Field
+                                                autoFocus={true}
                                                 name="phone_number"
                                                 id="phone_number"
                                                 type="number"
@@ -135,6 +139,7 @@ export default function LoginPage() {
                                         </label>
                                         <section className="mt-10 flex w-full items-center justify-between rounded-full bg-stone-100 px-3">
                                             <Field
+                                                autoFocus
                                                 name="valid_code"
                                                 id="valid_code"
                                                 type="number"

@@ -16,6 +16,10 @@ const nextConfig = {
                 source: `/${encodeURI("ورود-به-اکانت")}`,
                 destination: "/login-page",
             },
+            {
+                source: `/${encodeURI("ثبت-نام-در-سایت")}`,
+                destination: "/register-page",
+            },
         ];
     },
     images: {
