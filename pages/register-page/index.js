@@ -37,7 +37,7 @@ export default function RegisterPage() {
                     content="روغنی کار | با این صفحه میتونین به در سایت ثبت نام کنید تا به سفارش های خود دسترسی داشته باشید"
                 />
             </Head>
-            <main className="flex min-h-screen w-full items-center justify-center bg-gradient-to-tl from-orange-900 to-orange-500">
+            <main className="flex min-h-screen w-full items-center justify-center bg-gradient-to-tl from-orange-900 to-orange-500 px-4 md:px-0">
                 <Formik
                     initialValues={{ full_name: "", national_code: "" }}
                     validationSchema={VALIDATE_FORM}
@@ -66,7 +66,7 @@ export default function RegisterPage() {
                                     />
                                     <FaUserAlt className="text-2xl text-stone-400" />
                                 </section>
-                                <p className="my-5 text-sm font-bold text-red-500">
+                                <p className="my-5 text-[.7rem] font-extrabold text-red-500 md:text-sm md:font-bold">
                                     <ErrorMessage name="full_name" />
                                 </p>
                                 <label
@@ -89,7 +89,7 @@ export default function RegisterPage() {
                                     />
                                     <AiFillIdcard className="text-2xl text-stone-400" />
                                 </section>
-                                <p className="my-5 text-sm font-bold text-red-500">
+                                <p className="my-5 text-[.7rem] font-extrabold text-red-500 md:text-sm md:font-bold">
                                     <ErrorMessage name="national_code" />
                                 </p>
                                 <button
