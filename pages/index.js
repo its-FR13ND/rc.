@@ -1,6 +1,7 @@
 //! Required
 import Image from "next/image";
 import Link from "next/link";
+import Head from "next/head";
 
 //! Comps
 import Navigation from "../components/Navigation";
@@ -10,6 +11,15 @@ import Footer from "../components/Footer";
 const HomePage = () => {
     return (
         <>
+            <Head>
+                <title>
+                    🚗 روغنی کار | فروش انواع روغن موتور ، فیلتر خودرو و ضد یخ
+                </title>
+                <meta
+                    name="description"
+                    content="✅ روغنی کار ، قیمت و خرید روغن موتور ، خرید فیلتر هوا ، خرید فیلتر روغن ، خرید صافی بنزین و خرید ضد یخ با مناسب ترین قیمت و بهترین کیفیت"
+                />
+            </Head>
             <header className="mx-auto w-full max-w-5xl bg-gradient-to-l from-orange-900 to-orange-500 px-4 md:px-10">
                 <ul className="grid grid-cols-[auto_auto_auto] items-center justify-items-center gap-x-5 md:grid-cols-5 lg:grid-cols-[auto_auto_auto_auto_auto_1fr] lg:gap-x-14">
                     <li className="block py-3 text-sm font-bold text-white underline-offset-2 lg:hover:underline">
